@@ -10323,7 +10323,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+		(property "Footprint" "TerminalBlock:TerminalBlock_MaiXu_MX126-5.0-04P_1x04_P5.00mm"
 			(at 17.78 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -11910,7 +11910,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "project_library:ADS1115 Module"
 			(at 177.8 124.46 0)
 			(hide yes)
 			(show_name no)
