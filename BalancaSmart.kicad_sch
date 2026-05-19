@@ -4791,196 +4791,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Switch:SW_SPDT"
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "SW"
-				(at 0 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SW_SPDT"
-				(at 0 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 -7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Switch, single pole double throw"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "switch single-pole double-throw spdt ON-ON"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "SW_SPDT_0_1"
-				(circle
-					(center -2.032 0)
-					(radius 0.4572)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.651 0.254) (xy 1.651 2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 2.54)
-					(radius 0.4572)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 -2.54)
-					(radius 0.4572)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SW_SPDT_1_1"
-				(rectangle
-					(start -3.175 3.81)
-					(end 3.175 -3.81)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at 5.08 2.54 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -2.54 180)
-					(length 2.54)
-					(name "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Transistor_BJT:S8050"
 			(pin_names
 				(offset 0)
@@ -5233,27 +5043,29 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "RTC"
-				(at 0 -6.35 0)
+			(property "Reference" "RTC1"
+				(at 6.35 -9.144 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
 					)
+					(justify right)
 				)
 			)
 			(property "Value" "RTC_DS3231"
-				(at 0 8.89 0)
+				(at 6.35 -6.604 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
 					)
+					(justify right)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
 				(at -5.08 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -5386,7 +5198,7 @@
 				(pin power_in line
 					(at 15.24 5.08 180)
 					(length 5.08)
-					(name "GND"
+					(name "VCC"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5401,10 +5213,10 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin bidirectional line
 					(at 15.24 2.54 180)
 					(length 5.08)
-					(name "VCC"
+					(name "SDA"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5419,10 +5231,10 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin input line
 					(at 15.24 0 180)
 					(length 5.08)
-					(name "SDA"
+					(name "SCL"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5437,17 +5249,17 @@
 						)
 					)
 				)
-				(pin input line
+				(pin power_in line
 					(at 15.24 -2.54 180)
 					(length 5.08)
-					(name "SCL"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "4"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6171,16 +5983,6 @@
 		)
 		(uuid "21de8550-8790-4313-995f-5b53cf542393")
 	)
-	(text "AUTO-ON"
-		(exclude_from_sim no)
-		(at 64.77 155.194 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "2a1ec9a8-ba45-4bd5-b577-0151fd05bc6b")
-	)
 	(text "Controle de energia com latch eletrônico"
 		(exclude_from_sim no)
 		(at 34.29 128.524 0)
@@ -6243,7 +6045,7 @@
 	)
 	(text "AUTO-OFF"
 		(exclude_from_sim no)
-		(at 54.864 146.304 0)
+		(at 54.61 148.59 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6488,10 +6290,10 @@
 		(uuid "7fe503b3-9173-455a-90be-92e4a2355fbb")
 	)
 	(junction
-		(at 45.72 147.32)
+		(at 45.72 149.86)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a142bb3b-f5b3-48a8-abd0-ca2e676051e9")
+		(uuid "9fe56c4c-5c5e-4277-b0b3-0eb1709ac749")
 	)
 	(junction
 		(at 234.95 27.94)
@@ -6659,16 +6461,6 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 102.87) (xy 242.57 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "05f7494d-aad2-4c9e-a55d-9dd19cb43b0a")
-	)
-	(wire
-		(pts
 			(xy 45.72 163.83) (xy 45.72 161.29)
 		)
 		(stroke
@@ -6799,7 +6591,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 105.41) (xy 240.03 109.22)
+			(xy 240.03 105.41) (xy 240.03 113.03)
 		)
 		(stroke
 			(width 0)
@@ -6989,6 +6781,16 @@
 	)
 	(wire
 		(pts
+			(xy 228.6 97.79) (xy 228.6 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e6a55a8-42bc-43e7-b9cc-0d301b7b7c51")
+	)
+	(wire
+		(pts
 			(xy 250.19 27.94) (xy 257.81 27.94)
 		)
 		(stroke
@@ -7069,7 +6871,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 147.32) (xy 59.69 147.32)
+			(xy 45.72 149.86) (xy 69.85 149.86)
 		)
 		(stroke
 			(width 0)
@@ -7129,6 +6931,16 @@
 	)
 	(wire
 		(pts
+			(xy 137.16 62.23) (xy 137.16 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "592cbc59-a606-4481-ac80-0347b65e72a0")
+	)
+	(wire
+		(pts
 			(xy 68.58 86.36) (xy 68.58 91.44)
 		)
 		(stroke
@@ -7166,26 +6978,6 @@
 			(type default)
 		)
 		(uuid "5d253155-d6dd-4846-9df5-20f7ccf6a656")
-	)
-	(wire
-		(pts
-			(xy 59.69 152.4) (xy 59.69 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6614c530-4712-4c76-9318-4fc9819ae398")
-	)
-	(wire
-		(pts
-			(xy 45.72 147.32) (xy 45.72 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "69d94f3c-e738-49a5-b521-918403161331")
 	)
 	(wire
 		(pts
@@ -7579,7 +7371,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 153.67) (xy 45.72 147.32)
+			(xy 45.72 153.67) (xy 45.72 149.86)
 		)
 		(stroke
 			(width 0)
@@ -7639,16 +7431,6 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 100.33) (xy 227.33 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a841dfc2-ee56-46fa-af59-60b88928d587")
-	)
-	(wire
-		(pts
 			(xy 88.9 111.76) (xy 88.9 114.3)
 		)
 		(stroke
@@ -7676,6 +7458,16 @@
 			(type default)
 		)
 		(uuid "ab62dc98-85f5-48f8-af4f-173cd8b5649d")
+	)
+	(wire
+		(pts
+			(xy 242.57 97.79) (xy 228.6 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad98b4ab-1c11-4234-b84d-68cebf777b2a")
 	)
 	(wire
 		(pts
@@ -7806,6 +7598,16 @@
 			(type default)
 		)
 		(uuid "bd87f654-a68d-4ad4-a6d2-b1df03839694")
+	)
+	(wire
+		(pts
+			(xy 243.84 113.03) (xy 240.03 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be29f4c6-c1ed-48ca-bfce-728b726d97cf")
 	)
 	(wire
 		(pts
@@ -7969,6 +7771,16 @@
 	)
 	(wire
 		(pts
+			(xy 143.51 62.23) (xy 137.16 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6f70b91-7f84-4ae5-97a4-8ff7090ec9f9")
+	)
+	(wire
+		(pts
 			(xy 90.17 78.74) (xy 76.2 78.74)
 		)
 		(stroke
@@ -8076,6 +7888,16 @@
 			(type default)
 		)
 		(uuid "fa775b2a-7727-420a-a963-c621576916c8")
+	)
+	(wire
+		(pts
+			(xy 45.72 139.7) (xy 45.72 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "faab0d67-66d9-4478-af7a-bda554e6a176")
 	)
 	(wire
 		(pts
@@ -8457,30 +8279,6 @@
 			)
 		)
 	)
-	(global_label "I2C SCL"
-		(shape input)
-		(at 242.57 97.79 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "7b83e1ac-37a0-45b3-a153-e2cc5f0dd243")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 232.0253 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
 	(global_label "P+"
 		(shape input)
 		(at 73.66 109.22 180)
@@ -8553,7 +8351,7 @@
 			)
 		)
 	)
-	(global_label "I2C SDA"
+	(global_label "I2C SCL"
 		(shape input)
 		(at 242.57 100.33 180)
 		(fields_autoplaced yes)
@@ -8563,9 +8361,9 @@
 			)
 			(justify right)
 		)
-		(uuid "a44a189e-48b4-4d7d-89b4-a9ef0cbdee28")
+		(uuid "a9124931-8e04-4ade-8d9f-057b85de2cc0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 231.9648 100.33 0)
+			(at 232.0253 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8673,6 +8471,30 @@
 			)
 		)
 	)
+	(global_label "I2C SDA"
+		(shape input)
+		(at 242.57 102.87 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cfcf35af-c285-47d7-b74c-c48d014e04c4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 231.9648 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "pino 5v rasp"
 		(shape input)
 		(at 58.42 26.67 0)
@@ -8753,7 +8575,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 252.73 65.532 90)
 			(hide yes)
 			(show_name no)
@@ -8832,7 +8654,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 234.95 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -9051,89 +8873,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_SPDT")
-		(at 64.77 149.86 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0db17e6b-d70e-4b1e-8b72-2642ee289780")
-		(property "Reference" "SW2"
-			(at 64.77 140.97 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_SPDT"
-			(at 64.77 143.51 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 64.77 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 64.77 142.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Switch, single pole double throw"
-			(at 64.77 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "e3fa1b8f-3da2-49f1-b916-2381d23601f1")
-		)
-		(pin "1"
-			(uuid "a172f3ca-adc5-442e-b451-625bd5d22881")
-		)
-		(pin "3"
-			(uuid "94f8e7f0-ab13-4ae6-ba47-ba91aba51e5c")
-		)
-		(instances
-			(project "BalancaSmart"
-				(path "/575d70a9-ad0a-42e4-ac2e-81bc10aedfb5"
-					(reference "SW2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3V3")
 		(at 193.04 129.54 0)
 		(unit 1)
@@ -9327,6 +9066,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:Earth")
+		(at 137.16 63.5 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1ac3dda1-9cd7-4ba4-a872-a3882d03ce1a")
+		(property "Reference" "#PWR018"
+			(at 137.16 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Earth"
+			(at 137.16 68.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 137.16 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.16 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 137.16 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "011828d4-66c3-4959-8270-22aa56b573ea")
+		)
+		(instances
+			(project "BalancaSmart"
+				(path "/575d70a9-ad0a-42e4-ac2e-81bc10aedfb5"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 105.41 147.32 180)
 		(unit 1)
@@ -9360,7 +9177,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 107.188 147.32 90)
 			(hide yes)
 			(show_name no)
@@ -9565,6 +9382,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:Earth")
+		(at 228.6 106.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2420491d-59f4-462b-8a91-697b64c270e2")
+		(property "Reference" "#PWR017"
+			(at 228.6 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Earth"
+			(at 228.6 111.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 228.6 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 228.6 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"Earth\""
+			(at 228.6 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "10fb6929-eee9-456d-99c8-7ea21df608ce")
+		)
+		(instances
+			(project "BalancaSmart"
+				(path "/575d70a9-ad0a-42e4-ac2e-81bc10aedfb5"
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 215.9 140.97 0)
 		(unit 1)
@@ -9598,7 +9493,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 214.122 140.97 90)
 			(hide yes)
 			(show_name no)
@@ -9891,7 +9786,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 227.33 100.33 0)
+		(at 243.84 113.03 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9902,7 +9797,7 @@
 		(fields_autoplaced yes)
 		(uuid "380f5d34-f770-438a-abf3-ac4b72219dbf")
 		(property "Reference" "#PWR020"
-			(at 227.33 104.14 0)
+			(at 243.84 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9913,7 +9808,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 227.33 95.25 0)
+			(at 243.84 107.95 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9923,7 +9818,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 227.33 100.33 0)
+			(at 243.84 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9934,7 +9829,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 227.33 100.33 0)
+			(at 243.84 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9945,7 +9840,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 227.33 100.33 0)
+			(at 243.84 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10077,7 +9972,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 100.33 159.258 90)
 			(hide yes)
 			(show_name no)
@@ -10157,7 +10052,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock:TerminalBlock_MaiXu_MX126-5.0-02P_1x02_P5.00mm"
 			(at 34.29 82.296 0)
 			(hide yes)
 			(show_name no)
@@ -10408,7 +10303,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 242.57 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -10844,7 +10739,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
 			(at 82.55 137.16 0)
 			(hide yes)
 			(show_name no)
@@ -10962,7 +10857,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 240.792 38.1 90)
 			(hide yes)
 			(show_name no)
@@ -11042,7 +10937,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 240.03 145.542 90)
 			(hide yes)
 			(show_name no)
@@ -11362,7 +11257,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 248.412 38.1 90)
 			(hide yes)
 			(show_name no)
@@ -11729,7 +11624,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 257.81 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -11819,7 +11714,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 265.43 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -12016,7 +11911,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 29.972 157.48 90)
 			(hide yes)
 			(show_name no)
@@ -12147,84 +12042,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:Earth")
-		(at 240.03 109.22 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8fa6b42e-6bfd-404a-8b60-922661fdc960")
-		(property "Reference" "#PWR017"
-			(at 240.03 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Earth"
-			(at 240.03 114.3 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 240.03 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 240.03 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 240.03 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d868cdd0-30c6-41d8-9749-a7593a254399")
-		)
-		(instances
-			(project "BalancaSmart"
-				(path "/575d70a9-ad0a-42e4-ac2e-81bc10aedfb5"
-					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 234.95 38.1 0)
 		(unit 1)
@@ -12258,7 +12075,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 233.172 38.1 90)
 			(hide yes)
 			(show_name no)
@@ -12340,7 +12157,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 217.932 38.1 90)
 			(hide yes)
 			(show_name no)
@@ -12497,7 +12314,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 227.33 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -12668,7 +12485,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
 			(at 82.55 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -12875,7 +12692,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 214.122 152.4 90)
 			(hide yes)
 			(show_name no)
@@ -12957,7 +12774,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 210.312 38.1 90)
 			(hide yes)
 			(show_name no)
@@ -13036,7 +12853,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 205.74 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -13206,7 +13023,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 219.71 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -13836,7 +13653,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 203.962 38.1 90)
 			(hide yes)
 			(show_name no)
@@ -13996,7 +13813,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 263.652 38.1 90)
 			(hide yes)
 			(show_name no)
@@ -14242,84 +14059,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:Earth")
-		(at 59.69 158.75 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d90eb0cc-e9a9-42ad-9e0c-6627227c241d")
-		(property "Reference" "#PWR04"
-			(at 59.69 165.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Earth"
-			(at 59.69 163.83 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 59.69 158.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 59.69 158.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 59.69 158.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a3815e98-9f9a-4dd4-9ec9-d2a514a53a75")
-		)
-		(instances
-			(project "BalancaSmart"
-				(path "/575d70a9-ad0a-42e4-ac2e-81bc10aedfb5"
-					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 200.66 25.4 0)
 		(unit 1)
@@ -14506,7 +14245,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 250.19 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -14599,7 +14338,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_THT:TO-220-3_Vertical"
 			(at 274.32 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -14717,7 +14456,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 225.552 38.1 90)
 			(hide yes)
 			(show_name no)
@@ -14799,7 +14538,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 43.942 157.48 90)
 			(hide yes)
 			(show_name no)
@@ -14881,7 +14620,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 107.188 176.53 90)
 			(hide yes)
 			(show_name no)
@@ -14962,7 +14701,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
 			(at 262.89 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -14995,7 +14734,7 @@
 				)
 			)
 		)
-		(pin "4"
+		(pin "5"
 			(uuid "da62b3cf-3a25-4ef5-b338-85a01c951977")
 		)
 		(pin "3"
@@ -15047,7 +14786,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 212.09 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -15220,7 +14959,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 256.032 38.1 90)
 			(hide yes)
 			(show_name no)
