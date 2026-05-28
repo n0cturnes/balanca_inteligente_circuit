@@ -1233,7 +1233,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:Battery_Cell"
+		(symbol "Device:Battery"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1257,7 +1257,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "Battery_Cell"
+			(property "Value" "Battery"
 				(at 2.54 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1290,7 +1290,7 @@
 					)
 				)
 			)
-			(property "Description" "Single-cell battery"
+			(property "Description" "Multiple-cell battery"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1334,7 +1334,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "battery cell"
+			(property "ki_keywords" "batt voltage-source cell"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1345,7 +1345,7 @@
 					)
 				)
 			)
-			(symbol "Battery_Cell_0_1"
+			(symbol "Battery_0_1"
 				(rectangle
 					(start -2.286 1.778)
 					(end 2.286 1.524)
@@ -1358,8 +1358,30 @@
 					)
 				)
 				(rectangle
+					(start -2.286 -1.27)
+					(end 2.286 -1.524)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
 					(start -1.524 1.016)
 					(end 1.524 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -1.524 -2.032)
+					(end 1.524 -2.54)
 					(stroke
 						(width 0)
 						(type default)
@@ -1382,7 +1404,31 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0.762) (xy 0 0)
+						(xy 0 0) (xy 0 0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.508) (xy 0 -0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.016) (xy 0 -0.762)
 					)
 					(stroke
 						(width 0)
@@ -1417,7 +1463,7 @@
 					)
 				)
 			)
-			(symbol "Battery_Cell_1_1"
+			(symbol "Battery_1_1"
 				(pin passive line
 					(at 0 5.08 270)
 					(length 2.54)
@@ -1437,7 +1483,7 @@
 					)
 				)
 				(pin passive line
-					(at 0 -2.54 90)
+					(at 0 -5.08 90)
 					(length 2.54)
 					(name "-"
 						(effects
@@ -1927,159 +1973,6 @@
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 3.302)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:Fuse_Small"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "F"
-				(at 0 -1.524 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Fuse_Small"
-				(at 0 1.524 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Fuse, small symbol"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "fuse"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "*Fuse*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Fuse_Small_0_1"
-				(rectangle
-					(start -1.27 0.508)
-					(end 1.27 -0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 0) (xy 1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Fuse_Small_1_1"
-				(pin passive line
-					(at -2.54 0 0)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 0 180)
-					(length 1.27)
 					(name ""
 						(effects
 							(font
@@ -6380,12 +6273,6 @@
 		(uuid "e537a41f-0fdd-4ed4-915a-2eb919f07a7d")
 	)
 	(junction
-		(at 52.07 110.49)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ed7dfbc6-1cb6-48f1-9bb6-13023c60d7a7")
-	)
-	(junction
 		(at 31.75 163.83)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6402,6 +6289,10 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f847c043-dada-4c9c-9035-9a5e8aa490f1")
+	)
+	(no_connect
+		(at 53.34 110.49)
+		(uuid "197cab60-1a68-4baf-8888-9b574f033186")
 	)
 	(wire
 		(pts
@@ -6665,6 +6556,16 @@
 	)
 	(wire
 		(pts
+			(xy 53.34 118.11) (xy 53.34 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2dc20029-e66e-4287-955c-187bb5fb0773")
+	)
+	(wire
+		(pts
 			(xy 234.95 41.91) (xy 234.95 46.99)
 		)
 		(stroke
@@ -6895,7 +6796,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 78.74) (xy 55.88 78.74)
+			(xy 50.8 78.74) (xy 68.58 78.74)
 		)
 		(stroke
 			(width 0)
@@ -7205,7 +7106,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 118.11) (xy 52.07 118.11)
+			(xy 45.72 118.11) (xy 53.34 118.11)
 		)
 		(stroke
 			(width 0)
@@ -7222,16 +7123,6 @@
 			(type default)
 		)
 		(uuid "8d998ec5-79b7-4968-8d68-3739c7d194f2")
-	)
-	(wire
-		(pts
-			(xy 60.96 78.74) (xy 68.58 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8ed69591-4220-4a1c-873f-c72d22e26443")
 	)
 	(wire
 		(pts
@@ -7605,7 +7496,17 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 100.33) (xy 52.07 100.33)
+			(xy 53.34 110.49) (xy 40.64 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4003ee4-8102-4d65-b085-832f78159574")
+	)
+	(wire
+		(pts
+			(xy 45.72 100.33) (xy 53.34 100.33)
 		)
 		(stroke
 			(width 0)
@@ -7622,6 +7523,16 @@
 			(type default)
 		)
 		(uuid "c800e7ad-4971-47c7-b01c-8bc71c45f531")
+	)
+	(wire
+		(pts
+			(xy 53.34 100.33) (xy 53.34 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca3bdb8f-eeb6-4ab6-809d-786717c3240a")
 	)
 	(wire
 		(pts
@@ -7675,16 +7586,6 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 110.49) (xy 52.07 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dde777be-d30b-45de-8eed-c584f7314b8b")
-	)
-	(wire
-		(pts
 			(xy 44.45 163.83) (xy 45.72 163.83)
 		)
 		(stroke
@@ -7722,16 +7623,6 @@
 			(type default)
 		)
 		(uuid "e29a349f-4e84-4613-a864-d770da75ea49")
-	)
-	(wire
-		(pts
-			(xy 52.07 107.95) (xy 52.07 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e2f30e60-36cf-46d6-89ba-a824a321abfc")
 	)
 	(wire
 		(pts
@@ -7902,30 +7793,6 @@
 			(type default)
 		)
 		(uuid "fe6c9028-b920-4297-8503-062b5b186339")
-	)
-	(global_label "Buzzer"
-		(shape input)
-		(at 143.51 92.71 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "0fa2fa90-911d-4c7c-84b6-7fe16da515c4")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 134.1748 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
 	(global_label "DAT HX711"
 		(shape input)
@@ -8431,6 +8298,30 @@
 			)
 		)
 	)
+	(global_label "Buzzer"
+		(shape input)
+		(at 172.72 100.33 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cdeeccdb-a68c-4156-b390-07cf38e7f6b4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 182.0552 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "Sinal de desligamento"
 		(shape input)
 		(at 143.51 59.69 180)
@@ -8730,7 +8621,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Radial_D6.3mm_H7.0mm_P2.50mm"
 			(at 68.58 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -8929,121 +8820,6 @@
 			(project "BalancaSmart"
 				(path "/575d70a9-ad0a-42e4-ac2e-81bc10aedfb5"
 					(reference "#PWR021")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Battery_Cell")
-		(at 52.07 105.41 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0ff84742-33e9-4ea6-b1c2-a7970db396f6")
-		(property "Reference" "BT1"
-			(at 55.88 102.2984 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Battery_Cell"
-			(at 55.88 104.8384 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 52.07 103.886 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 52.07 103.886 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Single-cell battery"
-			(at 52.07 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "V"
-			(at 52.07 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" "DC"
-			(at 52.07 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=+ 2=-"
-			(at 52.07 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0e0a2c65-c910-4deb-90f0-e4c29e755629")
-		)
-		(pin "2"
-			(uuid "2a81187d-ae4c-416d-9057-fa99fdfd7a7a")
-		)
-		(instances
-			(project "BalancaSmart"
-				(path "/575d70a9-ad0a-42e4-ac2e-81bc10aedfb5"
-					(reference "BT1")
 					(unit 1)
 				)
 			)
@@ -9558,7 +9334,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Radial_D6.3mm_H7.0mm_P2.50mm"
 			(at 95.25 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -9640,7 +9416,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
 			(at 77.1652 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -11529,7 +11305,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
 			(at 103.8352 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -12554,6 +12330,121 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:Battery")
+		(at 53.34 110.49 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a0705192-0fc7-423e-afee-8feb0ca2c680")
+		(property "Reference" "BT1"
+			(at 57.15 108.6484 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Battery"
+			(at 57.15 111.1884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TerminalBlock:TerminalBlock_MaiXu_MX126-5.0-02P_1x02_P5.00mm"
+			(at 53.34 108.966 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 53.34 108.966 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Multiple-cell battery"
+			(at 53.34 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "V"
+			(at 53.34 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" "DC"
+			(at 53.34 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=+ 2=-"
+			(at 53.34 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "5953af12-98eb-4af4-a731-6035aa7df403")
+		)
+		(pin "1"
+			(uuid "f35d6f66-bfb0-4a57-a6b0-24d262962f77")
+		)
+		(instances
+			(project "BalancaSmart"
+				(path "/575d70a9-ad0a-42e4-ac2e-81bc10aedfb5"
+					(reference "BT1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_2Rows-05Pins")
 		(at 35.56 110.49 0)
 		(unit 1)
@@ -12891,86 +12782,6 @@
 			(project "BalancaSmart"
 				(path "/575d70a9-ad0a-42e4-ac2e-81bc10aedfb5"
 					(reference "D9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Fuse_Small")
-		(at 58.42 78.74 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b3ea7836-e566-4b52-ae08-8f654ae8eaf5")
-		(property "Reference" "F1"
-			(at 58.42 73.66 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Fuse_Small"
-			(at 58.42 76.2 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 58.42 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 58.42 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Fuse, small symbol"
-			(at 58.42 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a8404518-71cf-4e91-9151-4401efe9801a")
-		)
-		(pin "2"
-			(uuid "e16fd07b-9c26-4a80-8f88-c9e9f30463db")
-		)
-		(instances
-			(project "BalancaSmart"
-				(path "/575d70a9-ad0a-42e4-ac2e-81bc10aedfb5"
-					(reference "F1")
 					(unit 1)
 				)
 			)
@@ -13531,7 +13342,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ce552b9b-943b-4bed-b0a6-bce57d1d0bbd")
@@ -13555,7 +13366,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
 			(at 77.47 148.8948 0)
 			(hide yes)
 			(show_name no)
@@ -13846,121 +13657,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Battery_Cell")
-		(at 52.07 115.57 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d75139fd-4b9b-4ffe-b461-197b788715cc")
-		(property "Reference" "BT2"
-			(at 55.88 112.4584 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Battery_Cell"
-			(at 55.88 114.9984 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 52.07 114.046 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 52.07 114.046 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Single-cell battery"
-			(at 52.07 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "V"
-			(at 52.07 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" "DC"
-			(at 52.07 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=+ 2=-"
-			(at 52.07 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2c645167-8bdc-487d-b3f9-91096a8264cb")
-		)
-		(pin "2"
-			(uuid "ec8aa5da-3a4f-46f6-88b8-d83d3be44e8e")
-		)
-		(instances
-			(project "BalancaSmart"
-				(path "/575d70a9-ad0a-42e4-ac2e-81bc10aedfb5"
-					(reference "BT2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:Buzzer")
 		(at 261.62 135.89 0)
 		(unit 1)
@@ -13994,7 +13690,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Buzzer_Beeper:MagneticBuzzer_PUI_AT-0927-TT-6-R"
 			(at 260.985 133.35 90)
 			(hide yes)
 			(show_name no)
