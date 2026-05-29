@@ -9892,7 +9892,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock:TerminalBlock_MaiXu_MX126-5.0-04P_1x04_P5.00mm"
 			(at 78.74 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -10857,7 +10857,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Radial_D6.3mm_H7.0mm_P2.50mm"
 			(at 201.6252 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -11753,7 +11753,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Radial_D6.3mm_H7.0mm_P2.50mm"
 			(at 202.8952 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -12476,7 +12476,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock:TerminalBlock_MaiXu_MX126-5.0-04P_1x04_P5.00mm"
 			(at 35.56 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -13183,7 +13183,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Radial_D6.3mm_H7.0mm_P2.50mm"
 			(at 91.7448 142.24 0)
 			(hide yes)
 			(show_name no)
@@ -14557,7 +14557,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Radial_D6.3mm_H7.0mm_P2.50mm"
 			(at 44.45 162.8648 0)
 			(hide yes)
 			(show_name no)
