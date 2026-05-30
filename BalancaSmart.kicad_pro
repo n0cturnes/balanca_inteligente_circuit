@@ -716,7 +716,7 @@
         "uuid": "575d70a9-ad0a-42e4-ac2e-81bc10aedfb5"
       }
     ],
-    "used_designators": "BT1,BT3",
+    "used_designators": "#PWR4,#PWR10-11,#PWR22-26,BT1,BT3,JP1",
     "variants": []
   },
   "sheets": [
