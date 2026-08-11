@@ -7218,7 +7218,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 35.052 147.32 90)
 			(hide yes)
 			(show_name no)
@@ -9708,7 +9708,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock:TerminalBlock_MaiXu_MX126-5.0-03P_1x03_P5.00mm"
 			(at 217.17 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -9906,7 +9906,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TerminalBlock:TerminalBlock_MaiXu_MX126-5.0-04P_1x04_P5.00mm"
+		(property "Footprint" "TerminalBlock:TerminalBlock_MaiXu_MX126-5.0-02P_1x02_P5.00mm"
 			(at 50.8 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -10079,7 +10079,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 61.722 157.48 90)
 			(hide yes)
 			(show_name no)
@@ -10276,7 +10276,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 102.87 141.478 90)
 			(hide yes)
 			(show_name no)
@@ -10358,7 +10358,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 40.132 135.89 90)
 			(hide yes)
 			(show_name no)
@@ -10518,7 +10518,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock:TerminalBlock_MaiXu_MX126-5.0-02P_1x02_P5.00mm"
 			(at 45.72 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -10838,7 +10838,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 49.022 147.32 90)
 			(hide yes)
 			(show_name no)
@@ -10920,7 +10920,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
 			(at 61.722 166.37 90)
 			(hide yes)
 			(show_name no)
@@ -11165,7 +11165,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-4_W7.62mm_Socket_LongPads"
 			(at 78.74 147.32 0)
 			(hide yes)
 			(show_name no)
